@@ -2,7 +2,6 @@ import { createTheme } from "@mui/material/styles"
 
 const theme = createTheme({
     palette:{
-        
             mode:"dark",
             primary: {
             main: '#a5b0cb',
@@ -20,8 +19,6 @@ const theme = createTheme({
                     'cursive',
                   ].join(','),
               },
-        
-
     }
 })
 
