@@ -13,13 +13,12 @@ const theme = createTheme({
                 primary : "#dedede",
                 secondary : "#757575"
             },
-            typography: {
-                fontFamily: [
-                    'Chilanka',
-                    'cursive',
-                  ].join(','),
-              },
-    }
+            
+    },
+    typography: {
+        fontFamily:
+            'DM Mono'
+      },
 })
 
 export default theme;

@@ -13,7 +13,7 @@ export default function Appbar(){
             <Paper variant="outlined">
                 <Avatar src="/assets/medito.jpg" alt="medito"/>
             </Paper>
-            <Typography variant="h4" >
+            <Typography variant="h4">
                 -Donations
             </Typography>
         </Box>
