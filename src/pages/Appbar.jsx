@@ -1,4 +1,4 @@
-import { Avatar, Box,  Typography } from "@mui/material";
+import { Avatar, Box,  Typography,Paper } from "@mui/material";
 import { pink, red } from "@mui/material/colors";
 
 export default function Appbar(){
@@ -7,10 +7,12 @@ export default function Appbar(){
             width: "100%",
             zIndex: 1,
             display: "flex",
-            alignItems:'center',
+            alignItems:'center', 
             justifyContent:'center', 
         }}>
-            <Avatar  alt="Medito" src="src/assets/medito.jpg" />
+            <Paper variant="outlined">
+                <Avatar src="/assets/medito.jpg" alt="medito"/>
+            </Paper>
             <Typography variant="h4" >
                 -Donations
             </Typography>
