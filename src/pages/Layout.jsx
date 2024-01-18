@@ -17,7 +17,6 @@ function Layout() {
       await fetch(`${PaymentConfigs.BASE_URL}/`);
     }
     setInterval(()=>{
-      console.log("calling backend")
       callbackend();
     },3000)
   },[])
