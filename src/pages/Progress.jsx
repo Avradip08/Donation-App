@@ -3,24 +3,19 @@ import { LinearProgress, Typography, Container } from '@mui/material';
 import DonationInfo from '../configs/DonationInfo';
 
 const Progress = () => {
-  const [amount,setAmount] = useState(20000);
-  const [percentage,setPercentage] = useState(25);
+  const [amount,setAmount] = useState(0);
+  const [percentage,setPercentage] = useState(0);
   const populateAmout = ()=>{
     
-    //api call
-    const newAmount = 24000; //populate through api result
+    //api call - to populate data in real time
+    const newAmount = 24000; 
     setAmount(newAmount);
     setPercentage(Math.floor((newAmount/DonationInfo.goal)*100));
     
   }
   useEffect(()=>{
-    
-    const timer = setTimeout(()=>{
       populateAmout();
-    },3000)
-
-    return () => clearTimeout(timer);
-  },[amount])
+  },[])
 
   return (
     

@@ -10,9 +10,7 @@ export default function Appbar(){
             alignItems:'center', 
             justifyContent:'center', 
         }}>
-            <Paper variant="outlined">
-                <Avatar src="/assets/medito.jpg" alt="medito"/>
-            </Paper>
+            <Avatar src="/assets/medito.jpg" alt="medito"/>
             <Typography variant="h4">
                 -Donations
             </Typography>

@@ -10,10 +10,10 @@ const Notifications = () => {
     const timer = setTimeout(() => {
       const newNotification = {
         id: new Date().getTime(),
-        message: 'New Notification'+ Math.random(),
+        message: 'New Notification'+ Math.round(Math.random()),
       };
       setNotifications((prevNotifications) => [newNotification, ...prevNotifications.slice(0,2)]);
-    }, 3000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, [notifications]);

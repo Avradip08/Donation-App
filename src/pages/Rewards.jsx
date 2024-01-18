@@ -7,7 +7,7 @@ const Rewards = () => {
   return (
     <Container maxWidth="md" style={{ marginTop: '20px' }}>
       <Typography variant="h5" gutterBottom>
-        Rewards List
+        Donate and Win Prizes
       </Typography>
       <List>
         {RewardsList.map((reward, index) => (

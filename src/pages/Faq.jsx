@@ -67,35 +67,28 @@ const ContactForm = () => {
     setQuestion(event.target.value);
   };
 
-  const handleCheckboxChange = (event) => {
-    setIsChecked(event.target.checked);
-  };
-
   const handleSendEmail = () => {
     // Add logic to send email here
     console.log(`Sending email to ${email}`);
   };
 
   return (
-    <Container maxWidth="md" style={{ marginTop: '20px' }}>
-      <Typography variant="h5" gutterBottom>
-        For Further Queries
-      </Typography>
+    <Container maxWidth="md" style={{ marginTop: '10px' }}>
       <form>
+      <TextField
+          label="Your Email"
+          variant="outlined"
+          fullWidth
+          value={email}
+          onChange={handleEmailChange}
+          style={{ marginBottom: '20px' }}
+        />
       <TextField
           label="Your Question"
           variant="outlined"
           fullWidth
           value={question}
           onChange={handleQuestionChange}
-          style={{ marginBottom: '20px' }}
-        />
-        <TextField
-          label="Your Email"
-          variant="outlined"
-          fullWidth
-          value={email}
-          onChange={handleEmailChange}
           style={{ marginBottom: '20px' }}
         />
         <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
