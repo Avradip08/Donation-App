@@ -75,7 +75,7 @@ const Donation = () => {
         
         <Stack marginTop="20px" direction="row" spacing={2} >
           <Box flex={1}>
-              <FormControl  fullWidth variant="outlined">
+              <FormControl fullWidth variant="outlined">
                 <InputLabel>Currency</InputLabel>
                 <Select
                   value={currency}

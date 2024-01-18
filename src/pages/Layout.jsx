@@ -6,7 +6,7 @@ import Rewards from './Rewards'
 import Faq from './Faq'
 import Appbar from './Appbar'
 import Notifications from './Notifications'
-import { Grid, useMediaQuery, useTheme, Box, Stack } from '@mui/material'
+import { Grid, useMediaQuery, useTheme, Box, Stack, Container } from '@mui/material'
 import { useEffect } from 'react'
 import PaymentConfigs from '../configs/PaymentConfigs'
 
@@ -41,9 +41,9 @@ function Layout() {
     )
   }else{
     return (
-    <Box>
+    <Container>
         <Appbar/>
-        <Stack direction="row" spacing={2}>
+        <Stack direction="row">
           <Box flex={4}>
                 <Topic/>
                 <Progress/>
@@ -57,7 +57,7 @@ function Layout() {
               </Stack>
           </Box>
         </Stack>
-    </Box>
+    </Container>
     )
   }
 

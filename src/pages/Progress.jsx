@@ -23,7 +23,7 @@ const Progress = () => {
       <Typography variant="h5" gutterBottom>
         {amount}$ raised of {DonationInfo.goal}$ target
       </Typography>
-      <LinearProgress color='primary' sx={{height:"25px" , borderRadius: "15px"}} variant="determinate" value={percentage} style={{ width: '100%' }} />
+      <LinearProgress color='primary' sx={{height:"25px" , borderRadius: "15px"}} variant="determinate" value={percentage} />
     </Container>
   );
 };

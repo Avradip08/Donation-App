@@ -13,7 +13,7 @@ const Notifications = () => {
       
       const newNotification = {
         id: new Date().getTime(),
-        message: 'Anonynous donated $'+ Math.floor(Math.random() * (max - min) + min),
+        message: 'Anonymous donated $'+ Math.floor(Math.random() * (max - min) + min),
       };
       setNotifications((prevNotifications) => [newNotification, ...prevNotifications.slice(0,2)]);
     }, 5000);
