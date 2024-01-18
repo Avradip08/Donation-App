@@ -23,7 +23,7 @@ This is the current structure of the */src* directory
 - `theme.jsx` Includes the basic theme of (colors, fonts) used across the application
 
 ## Backend Repo
-- `(https://github.com/Avradip08/donation-app-backend)` - currently deployed on (render.com) and is not expected work properly
+- [Github Link](https://github.com/Avradip08/donation-app-backend) - currently deployed on (render.com) and is not expected work properly
 - Handles payment through stripe checkout api
 
 ## Future Scope
