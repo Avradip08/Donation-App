@@ -7,9 +7,20 @@ import Faq from './Faq'
 import Appbar from './Appbar'
 import Notifications from './Notifications'
 import { Grid, useMediaQuery, useTheme, Box, Stack } from '@mui/material'
+import { useEffect } from 'react'
+import PaymentConfigs from '../configs/PaymentConfigs'
 
 function Layout() {
 
+  useEffect(()=>{
+    const callbackend = async()=>{
+      await fetch(`${PaymentConfigs.BASE_URL}/`);
+    }
+    setInterval(()=>{
+      console.log("calling backend")
+      callbackend();
+    },3000)
+  },[])
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down('md'));
 

@@ -6,11 +6,14 @@ const Notifications = () => {
   const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
-    // Simulate receiving new notifications
+    // Simulate receiving new notifications - dummy simulation
     const timer = setTimeout(() => {
+      const min = Math.ceil(100);
+      const max = Math.floor(1000);
+      
       const newNotification = {
         id: new Date().getTime(),
-        message: 'New Notification'+ Math.round(Math.random()),
+        message: 'Anonynous donated $'+ Math.floor(Math.random() * (max - min) + min),
       };
       setNotifications((prevNotifications) => [newNotification, ...prevNotifications.slice(0,2)]);
     }, 5000);
