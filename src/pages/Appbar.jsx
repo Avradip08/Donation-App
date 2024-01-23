@@ -4,7 +4,7 @@ import { pink, red } from "@mui/material/colors";
 export default function Appbar(){
     return (
         <Box sx={{
-            width: "100%",
+            
             display: "flex",
             alignItems:'center', 
             justifyContent:'center', 

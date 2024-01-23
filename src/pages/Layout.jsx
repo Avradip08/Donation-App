@@ -6,7 +6,7 @@ import Rewards from './Rewards'
 import Faq from './Faq'
 import Appbar from './Appbar'
 import Notifications from './Notifications'
-import { Grid, useMediaQuery, useTheme, Box, Stack, Container } from '@mui/material'
+import { Grid, useMediaQuery, useTheme, Box, Stack, Container, Paper } from '@mui/material'
 import { useEffect } from 'react'
 import PaymentConfigs from '../configs/PaymentConfigs'
 
@@ -25,13 +25,11 @@ function Layout() {
 
   if(isSmall){
     return (
-      
         <Box >
-          <Box position="sticky" top={0} zIndex={100}>
+          <Box position="sticky" top={5} left={"5%"} zIndex={100} bgcolor="#3c3c3c" sx={{width:"90%",borderRadius:"8px"}}>
               <Appbar/>
           </Box>
           <Box spacing={2} justifyContent="center" alignItems="center">
-          
             <Topic/>
             <Progress/>
             <Donation/>
@@ -40,15 +38,14 @@ function Layout() {
             <Rewards/>
           </Box>
         </Box>
-      
-    )
+      )
   }else{
     return (
-        <Container >
-            
-            <Box position="sticky" top={0} zIndex={100}> 
-              <Appbar/>
-            </Box>
+        <Box > 
+          <Box position="sticky" top={5} left={"5%"} zIndex={100} bgcolor="#3c3c3c" sx={{width:"90%",borderRadius:"8px"}}> 
+            <Appbar/>
+          </Box>
+          <Container width="100%">
             <Stack direction="row">
             
               <Box flex={4}>
@@ -64,9 +61,9 @@ function Layout() {
                   </Stack>
               </Box>
             </Stack>
-            
-        </Container>
-    )
+          </Container>
+        </Box>
+      )
   }
 
 }
