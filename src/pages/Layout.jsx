@@ -26,7 +26,7 @@ function Layout() {
   if(isSmall){
     return (
         <Box >
-          <Box position="sticky" top={5} left={"5%"} zIndex={100} bgcolor="#3c3c3c" sx={{width:"90%",borderRadius:"8px"}}>
+          <Box position="sticky" top={5} left={"1.5%"} zIndex={100} bgcolor="#3c3c3c" sx={{width:"97%",borderRadius:"8px"}}>
               <Appbar/>
           </Box>
           <Box spacing={2} justifyContent="center" alignItems="center">
@@ -42,12 +42,11 @@ function Layout() {
   }else{
     return (
         <Box > 
-          <Box position="sticky" top={5} left={"5%"} zIndex={100} bgcolor="#3c3c3c" sx={{width:"90%",borderRadius:"8px"}}> 
+          <Box position="sticky" top={5} left={"1.5%"} zIndex={100} bgcolor="#3c3c3c" sx={{width:"97%",borderRadius:"8px"}}> 
             <Appbar/>
           </Box>
-          <Container width="100%">
+          <Container fixed>
             <Stack direction="row">
-            
               <Box flex={4}>
                     <Topic/>
                     <Progress/>
