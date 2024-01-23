@@ -27,8 +27,11 @@ function Layout() {
     return (
       
         <Box >
+          <Box position="sticky" top={0} zIndex={100}>
+              <Appbar/>
+          </Box>
           <Box spacing={2} justifyContent="center" alignItems="center">
-            <Appbar/>
+          
             <Topic/>
             <Progress/>
             <Donation/>
@@ -41,23 +44,28 @@ function Layout() {
     )
   }else{
     return (
-    <Container>
-        <Appbar/>
-        <Stack direction="row">
-          <Box flex={4}>
-                <Topic/>
-                <Progress/>
-                <Faq/>
-                <Rewards/>
-          </Box>
-          <Box flex={2}>
-             <Stack position = "fixed" >
-                <Notifications/>
-                <Donation/>
-              </Stack>
-          </Box>
-        </Stack>
-    </Container>
+        <Container >
+            
+            <Box position="sticky" top={0} zIndex={100}> 
+              <Appbar/>
+            </Box>
+            <Stack direction="row">
+            
+              <Box flex={4}>
+                    <Topic/>
+                    <Progress/>
+                    <Faq/>
+                    <Rewards/>
+              </Box>
+              <Box flex={2}>
+                <Stack position = "fixed" >
+                    <Notifications/>
+                    <Donation/>
+                  </Stack>
+              </Box>
+            </Stack>
+            
+        </Container>
     )
   }
 

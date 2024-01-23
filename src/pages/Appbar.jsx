@@ -5,7 +5,6 @@ export default function Appbar(){
     return (
         <Box sx={{
             width: "100%",
-            zIndex: 1,
             display: "flex",
             alignItems:'center', 
             justifyContent:'center', 
